@@ -1,0 +1,84 @@
+.flex-center-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-x {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-y {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(212deg, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+main {
+  width: 100%;
+}
+
+.qr-card {
+  width: 365px;
+  height: 550px;
+  padding: 15px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.qr-card_qr-code {
+  width: 95%;
+  height: 66.6666666667%;
+  margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.qr-card_heading,
+.qr-card_description {
+  width: 80%;
+}
+
+.qr-card_heading {
+  margin-bottom: 20px;
+  color: hsl(218deg, 44%, 22%);
+  font-weight: 700;
+}
+
+.qr-card_description {
+  color: hsl(220deg, 15%, 55%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */

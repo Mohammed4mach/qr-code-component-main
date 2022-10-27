@@ -1,0 +1,97 @@
+// Colors
+$White: hsl(0, 0%, 100%);
+$Light_gray: hsl(212, 45%, 89%);
+$Grayish_blue: hsl(220, 15%, 55%);
+$Dark_blue: hsl(218, 44%, 22%);
+// Dimensions
+$border_radius: 20px;
+$margin-card-components: 20px;
+
+// Start Utility Classes
+.flex-center-both
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-center-x
+{
+    display: flex;
+    justify-content: center;
+}
+.flex-center-y
+{
+    display: flex;
+    align-items: center;
+}
+
+.flex-column { flex-direction: column }
+
+.text-center { text-align: center }
+// End Utility Classes
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    background-color: $Light_gray;
+    font: {
+        family: 'Outfit', sans-serif;
+        size: 15px;
+        weight: 400;
+    }
+}
+
+
+main
+{
+    width: 100%;
+    
+}
+
+.qr-card
+{
+    width: 365px;
+    height: 550px;
+    padding: 15px;
+    margin: {
+        top: 60px;
+        bottom: 60px;
+    }
+    border-radius: $border_radius;
+    background-color: $White;
+}
+
+.qr-card_qr-code
+{
+    width: 95%;
+    height: calc(200% / 3);
+    margin-bottom: $margin-card-components;
+    object-fit: cover;
+    border-radius: $border_radius;
+}
+
+.qr-card_heading,
+.qr-card_description
+{ width: 80% }
+
+.qr-card_heading
+{
+    margin-bottom: $margin-card-components;
+    color: $Dark_blue;
+    font-weight: 700;
+}
+
+.qr-card_description
+{
+    color: $Grayish_blue;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
